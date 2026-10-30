@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content" />
+    <meta name="theme-color" content="#0b0b0c" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="Тёмный офлайн-блокнот" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Гримуар" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="./icons/icon.svg" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <title>Гримуар</title>
+    <style>
+      /* сплэш до загрузки JS — без белой вспышки */
+      html, body { background: #0b0b0c; margin: 0; }
+      #splash { position: fixed; inset: 0; display: grid; place-items: center; background: #0b0b0c; transition: opacity .4s ease; z-index: 100; }
+      #splash img { width: 96px; height: 96px; opacity: .9; filter: drop-shadow(0 0 18px rgba(232,230,227,.25)); }
+      #splash.gone { opacity: 0; pointer-events: none; }
+    </style>
+  </head>
+  <body>
+    <div id="splash"><img src="./icons/icon-mark.svg" alt="" /></div>
+    <div id="root"></div>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>
