@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <radialGradient id="light" cx="50%" cy="42%" r="60%">
+      <stop offset="0" stop-color="#26262a"/>
+      <stop offset="1" stop-color="#0b0b0c"/>
+    </radialGradient>
+  </defs>
+  <rect width="100" height="100" fill="url(#light)"/>
+  
+    <g transform="translate(6 6) scale(0.88)">
+      <path d="M24 22q0-4 4-4h48v64H28q-4 0-4-4Z" fill="#141416"/>
+      <path d="M24 22q0-4 4-4h48v64H28q-4 0-4-4Z" fill="none" stroke="#e8e6e3" stroke-width="1.6" opacity=".9"/>
+      <path d="M30 18v64" stroke="#e8e6e3" stroke-width="1" opacity=".6"/>
+      <path d="M26 30h4M26 70h4" stroke="#e8e6e3" stroke-width="1.6" opacity=".7"/>
+      <rect x="37" y="25" width="32" height="50" fill="none" stroke="#e8e6e3" stroke-width=".6" opacity="0.4"/>
+      <path d="M0 0h11C8 1.2 5 2 3.4 3.4 2 5 1.2 8 0 11Z M3 3l7 1.4-5 .8Z M3 3l1.4 7 .8-5Z" transform="translate(33 21) scale(1 1)" fill="#e8e6e3" opacity=".85"/><path d="M0 0h11C8 1.2 5 2 3.4 3.4 2 5 1.2 8 0 11Z M3 3l7 1.4-5 .8Z M3 3l1.4 7 .8-5Z" transform="translate(73 21) scale(-1 1)" fill="#e8e6e3" opacity=".85"/><path d="M0 0h11C8 1.2 5 2 3.4 3.4 2 5 1.2 8 0 11Z M3 3l7 1.4-5 .8Z M3 3l1.4 7 .8-5Z" transform="translate(33 79) scale(1 -1)" fill="#e8e6e3" opacity=".85"/><path d="M0 0h11C8 1.2 5 2 3.4 3.4 2 5 1.2 8 0 11Z M3 3l7 1.4-5 .8Z M3 3l1.4 7 .8-5Z" transform="translate(73 79) scale(-1 -1)" fill="#e8e6e3" opacity=".85"/>
+      <path d="M76 44h4q2 0 2 2v8q0 2-2 2h-4" fill="none" stroke="#e8e6e3" stroke-width="1.4" opacity=".8"/>
+      <path d="M53 33 54.6 39v6.4h6.2L66 48l-5.2 2.4h-6.2V63L53 69l-1.6-6V50.4h-6.2L40 48l5.2-2.6h6.2V39Z" fill="#e8e6e3" filter="url(#glow)"/>
+    </g>
+</svg>
